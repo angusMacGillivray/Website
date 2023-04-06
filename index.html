@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <!--Favicon for thing on the left of adress bar-->
+    <link rel="shortcut icon" type="image/png" href="Pictures/favicon.png">
+    <!--importing the style sheet-->
+    <link rel="Stylesheet" href="index.css"/>
+</head>
+<body class="light-theme">
+    <div class="alert">
+        <span class="off" onclick="this.parentElement.style.display='none';">&times;</span>
+        Notification, Please click the x to close this Notification.
+    </div>
+    <div class="Welcome">
+        <center><b>Welcome to my Website</b></center>
+    </div>      
+    <div class="colorSelector">
+        <center>Please Click one of the buttons below to change the color scheme of the website</center>
+    </div>
+    <div class="buttonSelector">
+        <center>
+            <button id="change-theme-light">Light Mode</button>
+            <script src="indexLight.js"></script>
+
+            <button id="change-theme-dark">Dark Mode</button>
+            <script src="indexLight.js"></script>
+
+            <button id="change-theme-green">Green Mode</button>
+            <script src="indexLight.js"></script>
+        </center>
+    </div>
+    <div class="navigation">
+        <center><p>Click One of the links below to check out other webpages on the site</p></center>
+        <center>
+            <ul>
+                <li><a href="index.html">Welcome Page</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="Crazypage.html">The Crazy Page</a></li>
+            </ul> 
+        </center>
+    </div>
+</body>
+</html>

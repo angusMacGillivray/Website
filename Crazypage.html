@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!--Favicon for thing on the left of adress bar-->
+    <link rel="shortcut icon" type="image/png" href="Pictures/favicon.png">
+    <!--importing the style sheet-->
+    <link rel="Stylesheet" href="crazy.css"/>
+</head>
+
+<body class="light-theme">
+    <div class="navigation">
+        <center><p><b>Navigation</b></p></center>
+        <center>
+            <ul>
+            <li><a href="index.html">Welcome Page</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="Crazypage.html">The Crazy Page</a></li>
+            </ul> 
+        </center>
+    </div>
+    <div class="colorSelector">
+        <center><b>Click one of the buttons below to change the color scheme of the website</b></center>
+    </div>
+    <div class="buttonSelector">
+        <center>
+            <button id="change-theme-light">Light Mode</button>
+            <script src="indexLight.js"></script>
+    
+            <button id="change-theme-dark">Dark Mode</button>
+            <script src="indexLight.js"></script>
+    
+            <button id="change-theme-green">Green Mode</button>
+            <script src="indexLight.js"></script>
+        </center>
+    </div>
+
+    <div class="split">
+        <div class="to">
+            <center>
+                <div class="title">
+                    <center><b><u>Crazy Page</u></b></center>
+                </div>
+            </center>
+            <!--Paragraph about the website and about me-->
+            <p>
+                <div class="paragraphText">
+                    <center>
+                        Welcome to the crazy page. On this page there will be many crazy and wild things.
+                    </center>
+                </div>
+            </p>
+            <center>
+                <div class="pictures">
+                    <div class="newText">
+                        <center>
+                            <p>
+                                Crazy Pictures gallary       
+                            </p>
+                        </center>
+                    </div>
+                    <center>
+                        <div class="yePics">
+                            <img src="https://wallpapercave.com/wp/wp3198485.jpg" alt="picture of a bunch of cool planets" width="500" height="500">
+                            <img src="Pictures/leagueof.JPG" alt="Picture of league of leagends charcters yasuo, vi and senna" width="500" height="500">
+                            <img src="Pictures/osu.png" alt="picture of OSU! logo which is a pink circle with osu! wirtten in it" width="500" height="500">
+                        </div>
+                    </center>
+                </div>
+            </center>
+        </div>
+        <center>
+            <div class ="ggff">
+                <label for="review">Whats your favourite image:</label>
+                <br>
+                <textarea id="review" name="review" rows="5" cols="30">
+                    Type which one you think is the best in here
+                </textarea>
+            </div>
+        </center>
+    </div>
+    <center>
+        <div class="tab">
+            <h2>Crazy table of numbers</h2>
+            <table>
+                <tr>
+                    <th>1</th>
+                    <th>4</th>
+                    <th>7</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>5</th>
+                    <th>8</th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>6</th>
+                    <th>9</th>
+                </tr>
+            </table>
+        </div>
+    </center>
+    <div class="cond">
+        <center>
+            <div class="yeye">
+                Please type in the number 7 below and press enter, if not I will be sad.
+            </div>
+            <div class="but">
+                <label for="num"></label>
+                <input type="text" id="num">
+                <input type="button" value="Press it" id="checker">
+                <p id="result-message"></p>
+                <script src="indexGreen.js"></script>
+            </div>
+        </center>
+    </div>
+</body>
+</html>

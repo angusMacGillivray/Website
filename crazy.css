@@ -1,0 +1,234 @@
+/*creating changable values for different themes*/
+:root{
+    --background: white;
+    --color:black;
+    --bgBlock:white;
+    --text:black;
+}
+
+body{
+    display: grid;
+    grid-row: 1fr 1fr 1fr 1fr;
+    grid-column: 1fr;
+    gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: var(--color);
+    background-color: var(--background);
+    border-radius: 15px;
+}
+
+a:link{
+    color: rgb(0, 37, 248);
+}
+a:visted{
+    color: rgb(0, 37, 248);
+}
+
+
+.Welcome{
+   border-radius: 15px;
+   padding: 10px;
+   font-size:20px;
+   background-color: var(--bgBlock);
+   color: var(--text);
+}
+.colorSelector{
+    padding: 10px;
+    border: black;
+    color: var(--text);
+    font-size: 20px;
+    background-color: var(--bgBlock);
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
+/*for light button*/
+#change-theme-light{
+    font-size: 30px;
+    color: black;   
+    border-color: black;
+    background-color:#FFD966;
+}
+/*for dark button*/
+#change-theme-dark{
+    font-size: 30px;
+    color: white;   
+    border-color: black;
+    background-color:#443C68;
+}
+
+/*for green button*/
+#change-theme-green{
+    font-size: 30px;
+    color: black;   
+    border-color: black;
+    background-color:#DDFFBB;
+}
+
+/*value that changes the to light theme, this is what the javascript file changes the theme to*/
+.light-theme{
+    --background:#FFF2CC;
+    --bgBlock:#FFD966;
+    --text:black;
+}
+/*value that changes the to dark theme, this is what the javascript file changes the theme to*/
+.dark-theme{
+    --background:#635985;
+    --bgBlock:#443C68;
+    --text:white;
+}
+/*value that changes the to green theme, this is what the javascript file changes the theme to*/
+.green-theme{
+    --background:#DDFFBB;
+    --bgBlock:#C7E9B0;
+    --text:black;
+}
+.buttonSelector{
+   border-radius: 15px;
+   color: var(--text);
+}
+.newText{
+    font-size: 30px;
+    color: var(--text);
+    padding: 10px;
+    background-color: var(--bgBlock);
+    border-radius: 15px;
+}
+.navigation{
+    border-radius: 15px;
+    background-color: var(--bgBlock);
+    color: var(--text);
+    font-size: 25px;
+    padding: none;
+}
+.pictures{
+    border-radius: 15px;
+    background-color: var(--bgBlock);
+    color: var(--text);
+    padding: none;
+}
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    display: inline-block;
+    text-align: left; 
+}
+li {
+    float: left;
+} 
+li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border:1px black solid;
+ }
+ .title{
+    border-radius: 15px;
+    font-size: 30px;
+    color: var(--text);
+    width: 30%;
+    padding: 5px;
+    background-color: var(--bgBlock);
+ }
+ .paragraphText{
+    border-radius: 15px;
+    font-size: 20px;
+    color: var(--text);
+    padding: 10px;
+    background-color: var(--bgBlock);
+ }
+ /*ggff is a div class*/
+ .ggff{
+    border-radius: 15px;
+    font-size: 20px;
+    color: var(--text);
+    
+    background-color: var(--bgBlock);
+    padding: 10px;
+
+ }
+ .tab{
+    border-radius: 15px;
+    font-size: 20px;
+    color: var(--text);
+    
+    background-color: var(--bgBlock);
+    padding: 10px;
+ }
+th, td {
+    border: 1px solid var(--text);
+  }
+.cond{
+    border-radius: 15px;
+    font-size: 20px;
+    color: var(--text);
+    background-color: var(--bgBlock);
+    padding: 10px;
+}
+  
+
+
+/*tablet layout*/
+
+@media screen and (min-width: 1000px){
+    .yePics{
+        width: 1250px;
+    }   
+    .Welcome {     
+        margin:auto;
+        width: 50%;      
+    }
+    .pictures{
+        width: 1300px;
+    }   
+    .colorSelector {
+        width: 50%;
+        margin: auto;      
+    } 
+    .buttonSelector{
+        border-radius: 15px;
+        width:50%;
+        margin:auto;
+    }
+    .navigation{
+        width: 50%;
+        border-radius: 15px;
+        margin: auto;
+    }
+}
+    
+
+/* Desktop layout */
+
+@media screen and (min-width: 1400px){  
+     .yePics{
+        width: 1750px;
+    }
+    .pictures{
+        width: 1800px;     
+    }
+    .Welcome {      
+        margin:auto;
+        width: 95%;
+        height: 10vh;    
+    }  
+    .colorSelector {
+        width: 95%;
+        height: 5vh;
+        margin: auto;       
+    } 
+    .buttonSelector{
+        border-radius: 15px;
+        width: 95%;
+        height: 5vh;
+        margin:auto;
+    }
+    .navigation{
+        width: 95%;
+        height: 20vh;
+        border-radius: 15px;
+        margin: auto;
+    }
+}
